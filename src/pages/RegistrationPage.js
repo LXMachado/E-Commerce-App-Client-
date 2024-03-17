@@ -1,45 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; // Import BrowserRouter and Route components from React Router
-import LoginPage from './pages/LoginPage'; // Import LoginPage component
-import RegistrationPage from './pages/RegistrationPage'; // Import RegistrationPage component
-import ProductsListingPage from './pages/ProductsListingPage'; // Import ProductsListingPage component
-import ProductDetailsPage from './pages/ProductDetailsPage'; // Import ProductDetailsPage component
-import CheckoutPage from './pages/CheckoutPage'; // Import CheckoutPage component
-import OrderHistoryPage from './pages/OrderHistoryPage'; // Import OrderHistoryPage component
-// Import other necessary components or pages
+import { Switch, Route } from 'react-router-dom';
 
-function App() {
+function RegistrationPage() {
   return (
-    <Router>
-      <div className="App">
-        {/* Define your routes */}
-        <Switch>
-          {/* Route for Login page */}
-          <Route path="/login" component={LoginPage} />
-          
-          {/* Route for Registration page */}
-          <Route path="/register" component={RegistrationPage} />
-
-          {/* Route for Products Listing page */}
-          <Route path="/products" component={ProductsListingPage} />
-
-          {/* Route for Product Details page */}
-          <Route path="/product/:id" component={ProductDetailsPage} />
-
-          {/* Route for Checkout page */}
-          <Route path="/checkout" component={CheckoutPage} />
-
-          {/* Route for Order History page */}
-          <Route path="/order-history" component={OrderHistoryPage} />
-
-          {/* Add more routes for other pages/components */}
-
-          {/* Default route */}
-          <Route path="/" component={ProductsListingPage} />
-        </Switch>
+    <div className="min-h-screen flex justify-center items-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md w-full space-y-8">
+        <div>
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Create an account</h2>
+        </div>
+        {/* Registration form goes here */}
       </div>
-    </Router>
+    </div>
   );
 }
 
-export default App;
+export default RegistrationPage;
