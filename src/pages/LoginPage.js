@@ -27,7 +27,9 @@ function LoginPage() {
             </div>
 
             <div className="text-sm">
-              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">Forgot your password?</a>
+              <button type="button" className="font-medium text-indigo-600 hover:text-indigo-500">
+                Forgot your password?
+              </button>
             </div>
           </div>
 

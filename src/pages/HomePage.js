@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
-    <div className="bg-cover bg-center min-h-screen" style={{ backgroundImage: "url('/background-image.jpg')" }}>
-      <div className="container mx-auto px-4 py-12 text-center">
-        <h1 className="text-4xl font-semibold text-white mb-4">Welcome to our e-commerce website!</h1>
-        <p className="text-lg text-white mb-8">Browse our products, sign in to your account, and start shopping!</p>
-        
-        {/* Call-to-action button */}
-        <Link to="/products" className="btn btn-primary inline-block">Shop Now</Link>
+    <div className="hero min-h-screen" style={{ backgroundImage: "url('/background-image.jpg')" }}>
+      <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero-content text-center text-neutral-content">
+        <div className="max-w-md">
+          <h1 className="mb-5 text-red-500 text-5xl font-bold">Welcome to our e-commerce website!</h1>
+          <p className="mb-5">Browse our products, sign in to your account, and start shopping!</p>
+          
+          {/* Call-to-action button */}
+          <Link to="/products" className="btn btn-primary">Shop Now</Link>
+        </div>
       </div>
     </div>
   );
