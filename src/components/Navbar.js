@@ -19,7 +19,7 @@ function Navbar() {
         </button>
       </div>
       <div className="flex-1">
-        <a href="#" className="btn btn-ghost text-xl">LX Vintage Guitars</a> {/* Add a valid href or replace with a button */}
+        <button className="btn btn-ghost text-xl" onClick={() => {}}>LX Vintage Guitars</button>
       </div>
       <div className="flex-none">
         <button className="btn btn-square btn-ghost">
